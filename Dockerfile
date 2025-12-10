@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM python:3.12.5-bookworm
+FROM python:3.13.7-trixie
 
 COPY requirements.txt requirements.txt
 
