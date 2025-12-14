@@ -1,10 +1,10 @@
 services:
-  climatefuture:
-    image: futurehomedocker
+  dashboard:
+    image: dashboard
     env_file:
       - .env
     ports:
-      - 8888:8888
+      - 8050:8050
     volumes:
       - ./:/fall25-uva-ds6600-climatefuture-jf
     networks:
@@ -26,17 +26,14 @@ services:
     - dbnetwork
 
   mysql:
-    image: futurehomesql
+    image: mysql
 
-    #Questions 1: What environmental variables are required by this image?
     env_file:
     - .env
 
-    #Question 2: Does the software have a port (inside the container) it runs on by default?
     ports:
     - 3306:3306
 
-    #Question 3: What folder inside the container stores the data you need to save?
     volumes:
     - mysqldata:/var/lib/mysql
 
@@ -45,6 +42,7 @@ services:
 
 volumes:
   postgresdata:
+  mysqldata:
 
 networks:
   dbnetwork:
