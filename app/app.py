@@ -175,6 +175,7 @@ DISASTER_COST_DF = DISASTER_COST_DF[DISASTER_COST_DF['Total_Cost_Millions'] > 0]
 
 # Define the Dash app
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 # Populate the dashboard layout
 app.layout = html.Div([
