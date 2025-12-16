@@ -1,2 +1,4 @@
+*.ipynb filter=lfs diff=lfs merge=lfs -text
+*.html filter=lfs diff=lfs merge=lfs -text
 notebooks/censusapi.ipynb filter=lfs diff=lfs merge=lfs -text
 notebooks/va_tracts_income_custom_colors.html filter=lfs diff=lfs merge=lfs -text
