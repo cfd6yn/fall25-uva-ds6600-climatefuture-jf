@@ -23,4 +23,4 @@ wget
 wquantiles
 python-dotenv
 us
-
+gunicorn
